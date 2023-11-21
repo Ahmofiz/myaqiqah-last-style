@@ -15,28 +15,80 @@ body {
   background-color: var(--c-body);
 }
 
-/* section padding */
-.section-padding {
-  padding-top: 100px;
-  padding-bottom: 100px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: var(--c-dark);
 }
 
+p {
+  color: var(--c-dark);
+}
+
+a:hover {
+  color: var(--c-brand);
+}
+
+.bg-brand {
+  background-color: var(--c-body);
+  color: var(--c-dark);
+}
+
+/* section padding */
+.section-padding {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/* border */
+.border-brand{
+  border: solid var(--c-brand);
+}
 /* button */
 .btn {
   font-weight: 600;
   padding: 10px 24px;
-  font-size: 1.4rem;
+  font-size: 1rem;
   background-color: var(--c-brand);
   color: var(--c-body);
   border-radius: 30px;
 }
+.btn:hover{
+  background-color: var(--c-body);
+  color: var(--c-brand);
+  border: 2px solid var(--c-brand);
+}
+
+.btn-brand{
+  font-weight: 600;
+  padding: 10px 24px;
+  font-size: 1rem;
+  background-color: var(--c-body);
+  color: var(--c-brand);
+  border-radius: 30px;
+  border: 2px solid var(--c-brand);
+}
+.btn-brand:hover{
+  background-color: var(--c-brand);
+  color: var(--c-body);
+}
 
 /* line */
-.line {
+.section-title .line {
   background-color: var(--c-brand);
   width: 100px;
   height: 5px;
+  margin: 16px auto 24px auto;
 }
+
 /* navbar */
 .navbar {
   box-shadow: var(--box-shadow);
@@ -49,4 +101,29 @@ body {
 }
 #hero h3 {
   font-family: 'Rubik';
+}
+#hero .hero-img {
+  width: 500px;
+  height: 500px;
+  flex-shrink: 0;
+  border-radius: 50% 50% 5% 5%;
+  object-fit: cover;
+  transform: scale(0.9);
+  transform: translateY(-20px);
+}
+
+/* testi */
+.img-wrapper{
+  width: 50px;
+  height: 50px;
+}
+
+#last-cta{
+  background: radial-gradient(182.43% 100% at 50% 0%, rgba(255, 255, 255, 0.00) 0%, #F1FDED 58.35%), url(/myaqiqah-last-style/assets/image/hero.jpg), lightgray 50% / cover no-repeat;
+  background-size: contain;
+
+}
+.last-body{
+  width: 100%;
+  min-height: 50vw;
 }
